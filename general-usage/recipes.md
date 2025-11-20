@@ -6,14 +6,19 @@ coverY: 0
 
 # 🧑‍🍳 Recipes
 
-Recipes can be created directly in the relevant file within the `Nexo/recipes` directory, or through the ingame RecipeBuilder.\
-The RecipeBuilder can be accessed with the command `/nexo recipes builder`.\
-Drag your desired items into the crafting slots to create your recipe. Make sure to set the "output" slot to the item you want to give.
+Recipes allow the player to craft items. With Nexo, you can create your own recipes with vanilla Minecraft items and/or custom Nexo items.
+Recipes can be created within the `plugins/Nexo/recipes` directory in your server files, or through Nexo's ingame RecipeBuilder feature.\
 
-Each Recipe-type has its own folder in `plugins/Nexo/recipes`, meaning you can organize recipes inside each folder into different files, sub-folders, etc.\
-The RecipeBuilder will store recipes inside `plugins/Nexo/recipes/X/X_recipes.yml`, X being the type (shaped, shapeless, etc.)
+## RecipeBuilder
 
-### Available Recipe Types:
+The allows an admin to create a custom item recipe ingame, rather than using config files. It can be accessed with the command `/nexo recipes builder`.\
+Drag your desired items into the crafting slots to create your recipe - Make sure to set the "output" slot to the item you want to be crafted by the player.
+The RecipeBuilder will automatically store recipes inside `plugins/Nexo/recipes/X/X_recipes.yml`, swapping out X for the recipe type used in the given recipe.
+
+## Recipe Types:
+
+Recipe types are the basic ways Minecraft detects for certain items to be placed in the crafting grid - or, outside of the crafting grid (For example, a shapeless recipe, or a brewing recipe).\
+Each recipe type has its own folder in `plugins/Nexo/recipes`, meaning you can organize recipes inside each folder into different files, sub-folders, etc.
 
 * SHAPELESS - Allows each ingredient to be put in any slot
 * SHAPED - Requires ingredients to be in a specific shape
@@ -23,8 +28,6 @@ The RecipeBuilder will store recipes inside `plugins/Nexo/recipes/X/X_recipes.ym
 * STONECUTTING - Recipe for the Stone Cutter
 * BREWING - Recipe for the Brewing Stand
 * SMITHING - Recipe for the Smithing Table - This is added via [NexoAddon](https://nexoaddon.gitbook.io/docs/recipes/smithing-recipe)
-
-## Examples:
 
 ### Shapeless
 
