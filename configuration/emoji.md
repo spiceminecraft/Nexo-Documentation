@@ -4,13 +4,15 @@ description: How to add emojis to the game?
 
 # Emoji
 
-## What is an glyph?
+This tutorial will cover adding emojis to your server via the glyph method below. For more information on glyphs outside of the emoji context, see [Glyphs](../configuration/glyphs/README.md).
 
-A glyph is a textured unicode symbol. It can be used in any texts \(chat, item name, lore and more\). They can be used to do very, very powerful things \(custom inventories, extra bars\) but their simplest use is to be emoji.
+## "What is a glyph?"
 
-## How to add a Glyph?
+A glyph is a unicode symbol that has its texture swapped via Nexo config. It can be used in any texts \(chat, item name, lore, and more\). They can be used to do very powerful things \(custom inventories, UI\) but their simplest use is to be emoji.
 
-You first need to create a png texture. For example the heart.png file contained in `default/chat`.
+## Adding a Glyph
+
+You first need to create a png texture and place it in the corresponding Nexo folder. For example the heart.png file contained in `plugins/Nexo/default/chat`. <-- (wrong directory?)
 
 ![heart.png](../.gitbook/assets/heart%20%281%29.png)
 
