@@ -9,9 +9,11 @@ coverY: 0
 
 ## 📋 Getting Started
 
-All the nexo-commands can be found under `/nexo` or it's aliases `/n` `/nx`
+All Nexo commands can be found as subcommands under `/nexo` or its aliases `/n` `/nx`.
 
-## 🎁 Getting/Removing items
+## 🎁 Item Control
+
+Using the methods below, admins can control what Nexo items players have. It can also be simply used for development purposes to give the admins items when testing.
 
 ### 📦 Nexo Inventory
 
@@ -58,7 +60,7 @@ This command is useful for debugging a NexoItem or held item to find the Data & 
 
 ## 🎨 Dyeing Items
 
-This command allows you to dye the item in your hand, whether it's a dyeable Nexo item or just a normal dyeable item.
+This command dyes the item in the player's hand. It works on dyable vanilla Minecraft items, as well as dyable Nexo items.
 
 #### Usage: `/nexo dye <color>`
 
@@ -72,7 +74,7 @@ This command allows you to dye the item in your hand, whether it's a dyeable Nex
 
 ## 🔧 Recipe Commands
 
-This command allows you to add new recipes to the configuration directly from the game using recipes builder. For more information on how to use it, see [Recipes](recipes.md).
+This command allows you to add new recipes to the configuration directly from the game using the RecipeBuilder. For more information on how to use it, see [Recipes](recipes.md).
 
 #### Usage:
 
@@ -89,8 +91,7 @@ This command allows you to add new recipes to the configuration directly from th
 
 ## 📩 Manual Pack Sending
 
-This command allows you to send the pack to a group of players.\
-Useful if the automatic sending failed or for testing
+This command allows you to send the resource pack to a group of players, in case the default application of the pack failed.
 
 #### Usage: `/nexo pack <player>`
 
@@ -98,10 +99,10 @@ Useful if the automatic sending failed or for testing
 
 ***
 
-## ⬆️ Updating Items and Furnitures
+## ⬆️ Updating Items and Furniture
 
-This command allows you to update furnitures and items.\
-Useful if the auto update failed or if you disabled it in settings
+This command allows you to manually update furniture and items.\
+Useful if the auto update failed or if you disabled it in settings.
 
 #### Usage:
 
@@ -178,7 +179,7 @@ This command opens a book with all the emojis (glyphs with `is_emoji: true`).
 
 ## 🔄 Reload
 
-This command allows you to reload Nexo configurations.\
+This command reloads the specified part of the Nexo configuration.\
 Reloading items updates any changes you might have made, and updates all old copies players might have.\
 Reloading pack regenerates the resourcepack, and if `Pack.dispatch.send_on_reload` is enabled in `settings.yml`, will be dispatched to all players.
 
@@ -199,8 +200,7 @@ Reloading pack regenerates the resourcepack, and if `Pack.dispatch.send_on_reloa
 
 ## 🐛 Debug Mode
 
-This command just toggles the debug-state of Nexo.\
-In case you run into a bug or an error, you might be asked to toggle this to provide support with a more full error-log of the bug.
+This command toggles the `debug-state` of Nexo. It is not needed unless you are experiencing an issue and need to report the logs or test something.\
 
 #### Usage: `/nexo debug`
 
@@ -210,8 +210,8 @@ In case you run into a bug or an error, you might be asked to toggle this to pro
 
 ## ℹ️ Nexo Version
 
-This command simply shows you the version of Nexo.\
-If using devbuilds, we might ask you to give us the full jar-file name.
+This command shows you the version of Nexo running on your server.\
+If using developer builds and asking for support, we might ask you to give us the full jar-file name.
 
 #### Usage: `/nexo version`
 
@@ -223,7 +223,7 @@ If using devbuilds, we might ask you to give us the full jar-file name.
 
 This command deletes the custom\_model\_data from all of your Nexo Items.\
 Mainly useful for swapping Nexo to a "ItemModel" based system for 1.21.4+ servers.\
-You can get more info about the difference between ItemModels and CustomModelDatas, and why ItemModels are the recommended choice at [itemmodels-vs.-custommodeldata.md](../configuration/items-advanced/itemmodels-vs.-custommodeldata.md "mention")
+You can get more info about the difference between ItemModels and CustomModelData, and why ItemModels are the recommended choice at [itemmodels-vs.-custommodeldata.md](../configuration/items-advanced/itemmodels-vs.-custommodeldata.md "mention")
 
 #### Usage: `/nexo reset_custom_model_data`
 
